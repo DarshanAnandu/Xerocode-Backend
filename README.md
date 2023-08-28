@@ -41,6 +41,6 @@ The GitHub Apps API becomes your ally, ensuring the integration process is seaml
 
 The frontend takes center stage, showcasing the repositories fetched from GitHub. The user is now empowered to choose repositories, an essential step in crafting their digital domain.
 
-**A Glimpse of Our Creation**: Visit our Frontend at [https://xerocodee-fullstack-assignment.netlify.app/](https://xerocodee-fullstack-assignment.netlify.app/) and dive into the backend api at [https://xerocodee-e5rc.onrender.com](https://xerocodee-e5rc.onrender.com). The [https://github.com/DarshanAnandu/Xerocode-Frontend/tree/master](Fronend Repository) and the [https://github.com/DarshanAnandu/Xerocode-Backend/tree/master](Backend Repository).
+**A Glimpse of Our Creation**: Visit our Frontend at [https://xerocodee-fullstack-assignment.netlify.app/](https://xerocodee-fullstack-assignment.netlify.app/) and dive into the backend api at [https://xerocodee-e5rc.onrender.com](https://xerocodee-e5rc.onrender.com).  You can also explore the source code of our Frontend on [GitHub](https://github.com/DarshanAnandu/Xerocode-Frontend/tree/master) and the Backend on [GitHub](https://github.com/DarshanAnandu/Xerocode-Backend/tree/master).
 
 This journey weaves together intricate backend technologies, elegant frontend interfaces, and the power of choice, resulting in a Full Stack masterpiece. Let's build a digital world that caters to every user's uniqueness! 🌟👩‍💻👨‍💻
