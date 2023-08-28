@@ -1,84 +1,52 @@
-# API Authentication using NodeJs
+# Full Stack Development Task
 
-This is an Authentication API using JWT's that you can plug inside your current project or you can start with a new one. Email & Password is used for authentication.
+Welcome to the Full Stack Development Task! 🚀 In this task, you'll be building a Signin/Signup system with JWT authentication, integrating with Redis and either DynamoDB or MongoDB on the backend. Let's get started with the workflow:
 
-The API based on Node.js, Express, MongoDB & Redis, following the **MVC pattern** i.e. Model ~~View~~ Controller.
+## Step 1: Signin/Signup System with JWT, Redis, and DynamoDB/MongoDB
 
-**Mongoose** is used for storing Users in Database.
-**Redis** is used for storing Refresh Tokens - to validate them as well at the same time Blacklisting them.
+### Backend Setup
+- We'll begin by setting up a powerful Node.js server using Express.js.
+- For secure authentication, we'll utilize Passport.js.
+- JWT tokens will be created and validated using the jsonwebtoken library.
+- Redis will be used to store JWT metadata for efficient management.
+- User credentials will be securely stored in either DynamoDB or MongoDB.
 
-The application is **production ready**.
+### Routes
+1. **/signup**: Register a new user.
+2. **/signin**: Login a registered user.
+3. **/auth/google**: Implement Google OAuth for easy authentication.
+4. **/auth/github**: Integrate GitHub OAuth for seamless login.
 
----
+## Step 2: User Type Selection
 
-## To start setting up the project
+### Frontend
+- After successful signup/signin, users will be presented with the following options: Developer, Organization, Company.
 
-Step 1: Clone the repo
+### Backend
+- The selected user type will be stored in DynamoDB or MongoDB for future reference.
 
-```bash
-git clone https://github.com/trulymittal/API-Authentication-NodeJs.git
-```
+## Step 3: Hosting Option Selection
 
-Step 2: cd into the cloned repo and run:
+### Frontend
+- Users will be able to choose from two hosting options: Self Hosting or XeroCode Hosting.
+- If Self Hosting is selected, further options will include AWS and GitHub.
 
-```bash
-npm install
-```
+### Backend
+- The chosen hosting option will be stored in DynamoDB or MongoDB.
 
-Step 3: Put your credentials in the .env file.
+## Step 4: GitHub App Integration
 
-```bash
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017
-DB_NAME=YOUR_DB_NAME
-ACCESS_TOKEN_SECRET=GENERATE_FROM_GENERATE_KEYS_FILE_IN_HELPER
-REFRESH_TOKEN_SECRET=GENERATE_FROM_GENERATE_KEYS_FILE_IN_HELPER
-```
+### Frontend
+- If the user opts for GitHub hosting, they will be redirected to install the GitHub App.
 
-Step 4: To generate 256-bit keys for JWT
+### Backend
+- GitHub Apps API will be integrated to facilitate the installation process.
+- Once the app is successfully installed, the backend will fetch the user's public and private repositories.
 
-```bash
-node ./helpers/generate_keys.js
-```
+## Display Repositories
+- The frontend will present a list of repositories fetched from GitHub.
+- This list will empower users to conveniently select repositories for further actions.
 
-Step 5: Install Redis (Linux Ubuntu)
+**Important Note**: Just like how Netlify requires GitHub access to deploy repositories, your application will fetch repositories, read content, and empower users with deployment options.
 
-```bash
-sudo apt-get install redis-server
-```
-
-Step 6: Run Redis Server (Linux Ubuntu)
-
-```bash
-redis-server
-```
-
-Step 7: Install MongoDB (Linux Ubuntu)
-
-See <https://docs.mongodb.com/manual/installation/> for more infos
-
-Step 8: Run Mongo daemon
-
-```bash
-sudo service mongod start
-```
-
-Step 9: Start the API by
-
-```bash
-npm start
-```
-
-Step 10 (Optional): Change the expiration time of Access Token and Refresh Token according to your needs by going inside the **`./helpers/jwt_helper.js`** file.
-
-## Author
-
-- [**Truly Mittal**](https://trulymittal.com)
-
-## Contribute
-
-You can fork this repo and send me a PR.
-
-## License
-
-This project is licensed under the MIT License.
+With this workflow, you'll create a comprehensive Full Stack application that covers authentication, user preferences, hosting options, and GitHub integration. Happy coding! 🚀👩‍💻👨‍💻
